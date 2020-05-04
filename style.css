@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: lightseagreen;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.calendar {
+    margin: auto;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+.weekdays {
+    background-color: mediumblue;
+    color: #fff;
+    padding: 7px 0;
+    display: flex;
+}
+
+.days {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+    text-align: center;
+    width: 14.28%;
+}
+
+.days div {
+    padding: 5px 10px 30px 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.days div span {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.prev_date {
+    color: #999;
+}
+
+.today {
+    background-color: lightyellow;
+    border:1px solid #000;
+}
+
+.days div:hover {
+    cursor: pointer;
+    background-color: darkslateblue;
+    color: #fff;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.booked-date {
+    background: lightblue;
+}
